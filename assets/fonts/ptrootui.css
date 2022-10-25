@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'PT Root UI';
+	src: url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUIVF.woff2') format('woff2') url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUIVF.woff') format('woff');
+	font-weight: 1;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Root UI';
+	src: url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Light.woff2') format('woff2') url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Root UI';
+	src: url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Regular.woff2') format('woff2') url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Root UI';
+	src: url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Medium.woff2') format('woff2') url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Root UI';
+	src: url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Bold.woff2') format('woff2') url('    <link rel="stylesheet" href="assets/css/style.css">
+PTRootUI-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
