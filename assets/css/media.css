@@ -225,13 +225,39 @@
         padding-top: 24px;
     }
     .follow-us-buttons{
-        display: block;
         margin: 0 auto;
         text-align: center;
     }
-    .follow-us-buttons li{
-        margin: 0;
-    };
+    .form-contact-inner{
+        padding: 45px 20px;
+    }
+    .form-contact-text-title{
+        font-size: 44px;
+        max-width: 346px;
+    }
+    .form-contact-text-subtitle{
+        font-size: 20px;
+    }
+    .footer-menu{
+        display: grid;
+        grid-template-columns:  auto auto auto;
+    }
+    .footer-menu-list li{
+        display: block;
+        padding-bottom: 24px;
+    }
+    .footer-menu-list{
+        display: grid;
+        grid-template-columns:  auto auto;
+    }
+    .footer-adress-block{
+        display: grid;
+        text-align: left;
+        grid-template-columns: auto;
+    }
+    p.footer-numbers-content{
+        text-align: left;
+    }
 }
 @media (max-width: 500px){
     .main-inner{
@@ -255,5 +281,80 @@
         padding-top: 20px;
         width: 100%;
         height: 100%;
+    }
+    .services-inner{
+        grid-template-columns: auto;
+    }
+    .services-list{
+        padding-top: 50px;
+    }
+    .reliability-container{
+        grid-template-columns: auto;
+    }
+    .reliability-img img{
+        width: 100%;
+    }
+    .reliability-text{
+        padding-top: 33px;
+    }
+    .our-numbers-container{
+        grid-template-columns: auto auto;
+    }
+    .portfolio-container{
+        grid-template-columns: auto;
+    }
+    .our-clients-inner-container{
+        grid-template-columns: auto auto;
+    }
+    .__second_row{
+        border-bottom: 2px solid #DBDCDB;
+    }
+    .our-clients-inner-card{
+        border-right: none;
+    }
+    .__mobile__card__clients{
+        border-right: 2px solid #DBDCDB;
+    }
+    .about-us-title{
+        display: block;
+    }
+    .price-table-item{
+        display: block;
+    }
+    .form-contact-inner{
+        grid-template-columns: auto;
+    }
+    .follow-us-buttons{
+        display: grid;
+        justify-content: center;
+    }
+    .follow-us-btn{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .footer-menu{
+        grid-template-columns: auto auto;
+    }
+    .footer-menu-list li:not(:last-child){
+        padding-right: 0;
+    }
+    .footer-numbers{
+        padding-top: 32px;
+    }
+    .footer-email{
+        padding-top: 32px;
+        text-align: left;
+    }
+}
+@media (max-width: 400px){
+    .main-img-block img{
+        max-width: 300px;
+        height: 100%;
+    }
+    .main-slider-block{
+        max-width: 300px;
+    }
+    .portfolio-item-img img{
+        max-width: 300px;
     }
 }

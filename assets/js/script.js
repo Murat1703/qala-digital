@@ -38,3 +38,13 @@ serviceSpoiler.forEach(serviceSpoiler => {
     });    
 });
 
+let burgerMenu = document.querySelector('.menu-burger');
+let burgerMenuLines = document.querySelector('.menu-burger-lines');
+let mobileMenu = document.querySelector('.mobile-menu');
+let body = document.querySelector('body');
+
+burgerMenu.addEventListener('click', () => {
+    burgerMenuLines.classList.toggle('__open');
+    mobileMenu.classList.toggle('__open');
+    body.classList.toggle('__locked');
+})

@@ -40,6 +40,19 @@
         </div>
     </header>
 
+    <div class="mobile-menu">
+        <div class="mobile-menu-list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Цифры</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Цифры</a></li>
+            <li><a href="#">Стоимость</a></li>
+            <li><a href="#">Контакты</a></li>
+        </div>
+    </div>
+
     <section class="main-wrapper">
         <div class="main-inner container">
             <div class="main-img-block">
@@ -251,25 +264,25 @@
             <div class="our-clients-title">
                 Наши <span class="our-clients-title-formatted">клиенты</span> 
                 <div class="our-clients-inner-container">
-                    <div class="our-clients-inner-card">
+                    <div class="our-clients-inner-card __mobile__card__clients">
                         <img src="assets/img/our-clients/magnum_logo.png" alt="magnum_logo">
                     </div>
                     <div class="our-clients-inner-card">
                         <img src="assets/img/our-clients/helios_logo.png" alt="helios_logo">
                     </div>
-                    <div class="our-clients-inner-card">
+                    <div class="our-clients-inner-card __mobile__card__clients">
                         <img src="assets/img/our-clients/technodom_logo.png" alt="technodom_logo">
                     </div>
                     <div class="our-clients-inner-card __last_card">
                         <img src="assets/img/our-clients/ersai_logo.png" alt="ersai_logo">
                     </div>   
-                    <div class="our-clients-inner-card __second_row">
+                    <div class="our-clients-inner-card __second_row __mobile__card__clients">
                         <img src="assets/img/our-clients/kaz_minerals_logo.png" alt="kaz_minerals_logo">
                     </div>    
                     <div class="our-clients-inner-card __second_row">
                         <img src="assets/img/our-clients/Sulpak_logo.png" alt="Sulpak_logo">
                     </div>             
-                    <div class="our-clients-inner-card __second_row">
+                    <div class="our-clients-inner-card __second_row __mobile__card__clients">
                         <img src="assets/img/our-clients/bipek_logo.png" alt="bipek_logo">
                     </div>            
                     <div class="our-clients-inner-card __second_row __last_card">
@@ -396,14 +409,102 @@
                 </div>
                 <div class="contacts-inner-content">
                     <div class="follow-us-buttons">
-                        <li><a href="#" ><img src="assets/img/followus/ig.svg" alt="insta-icon"></a></li>
-                        <li><a href="#" ><img src="assets/img/followus/email.svg" alt="insta-icon"></a></li>
-                        <li><a href="#" ><img src="assets/img/followus/support.svg" alt="insta-icon"></a></li>
+                        <div class="follow-us-btn">
+                            <div class="follow-us-icon">
+                                <img src="assets/img/followus/insta_icon.svg" alt="insta_icon">
+                            </div>
+                            <div class="follow-us-btn-txt">@digitalqala 
+                            </div>
+                        </div>
+                        <div class="follow-us-btn">
+                            <div class="follow-us-icon">
+                                <img src="assets/img/followus/email_icon.svg" alt="insta_icon">
+                            </div>
+                            <div class="follow-us-btn-txt __email-txt">hello@digitalqala.kz
+
+                            </div>
+                        </div>
+                        <div class="follow-us-btn">
+                            <div class="follow-us-icon">
+                                <img src="assets/img/followus/support__icon.svg" alt="insta_icon">
+                            </div>
+                            <div class="follow-us-btn-txt __support__text">support@digitalqala.kz
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="form-contact-wrapper">
+        <div class="form-contact-inner container">
+            <div class="form-contact-text-block">
+                <div class="form-contact-text-title">закажите проект любой <span class="formatted-form-contact-title">сложности</span> </div>
+                <div class="form-contact-text-subtitle">Закажите проект любой сложности и получите год технической поддержки. Напишите нам, и мы обязательно свяжемся с вами в течение 14 минут.
+                </div>
+            </div>
+            <div class="form-contact-form-block">
+                <form action="">
+                    <div class="form-content">
+                        <div class="form-item">
+                            <p class="form-item-label">Ваше имя</p>
+                            <input type="text" class="name">
+                        </div>
+                        <div class="form-item">
+                            <p class="form-item-label">Ваш e-mail</p>
+                            <input type="text" class="email">
+                        </div>
+                        <div class="form-item">
+                            <p class="form-item-label">Ваше сообщение</p>
+                            <input type="text" class="message">
+                        </div>
+                        <div class="form-text-spam">
+                            Мы не продаем базы и не любим СПАМ так же, как и вы.
+                            Можете быть уверены, что ваши контакты находятся в полной безопасности. 
+                        </div>
+                        <input type="submit" value="Отправить сообщение" class="form-send-msg" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-wrapper">
+        <div class="footer-inner container">
+            <div class="footer-menu">
+                <div class="footer-logo"><img src="assets/img/footer/footer__logo.svg" alt="footer-logo"></div>   
+                <div class="footer-menu-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Цифры</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </div> 
+                <a href="#" class="go-to-top">Вернуться наверх</a>
+            </div>
+            <div class="footer-adress-block">
+                <div class="footer-adress">
+                    <p class="footer-adress-content">Республика Казахстан, г. Алматы, </p>
+                    <p class="footer-adress-content">ул. Кунаева 181 Б</p>
+                    <p class="footer-adress-content">Офис №605</p>
+                </div>
+                <div class="footer-numbers">
+                    <p class="footer-numbers-content">Тел. номер компании 7 (727) 3231333 </p>
+                    <p class="footer-numbers-content">Отдел продаж 7 (727) 3231333</p>
+                    <p class="footer-numbers-content">Тех поддержка 7 (727) 3231300 </p> 
+                </div>
+                <div class="footer-email">
+                    <p class="footer-email-content">hello@digitalqala.kz</p>
+                    <p class="footer-email-content footer-email-content-last">support@digitalqala.kz</p>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-copyright">QALA © 2022 </div>
+        </div>
+    </footer>
 
 </body>
 </html>

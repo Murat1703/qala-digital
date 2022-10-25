@@ -32,6 +32,9 @@ html, body{
 	font-family: 'IBM Plex Sans', sans-serif;
 	scroll-behavior: smooth;
 }
+body.__locked{
+    overflow: hidden;
+}
 .container{
     max-width: 1440px;
     padding: 0 20px;
@@ -39,6 +42,7 @@ html, body{
 }
 .header-wrapper{
     background: #000;
+    z-index: 999;
     color: rgba(255, 255, 255, 1);
     font-family: 'PT Root UI';
 }
@@ -51,6 +55,7 @@ html, body{
     padding: 42px 20px 74px 20px;
     display: flex;
     align-items: center;
+    z-index: 998;
     justify-content: space-between;
 }
 .menu-list li{
@@ -163,6 +168,50 @@ html, body{
 }
 .menu-burger-lines span:nth-child(3){
     top: 16px;
+}
+.menu-burger-lines.__open span:nth-child(1){
+    transform: rotate(45deg);
+    top: 8px;
+    transition: .3s ease all;
+}
+.menu-burger-lines.__open span:nth-child(2){
+    display: none;
+}
+.menu-burger-lines.__open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 8px;
+    transition: .3s ease all;
+}
+.mobile-menu{
+    position: fixed;
+    top: 52px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-5000px);
+    z-index: 1;
+}
+.mobile-menu.__open{
+    transform: translateY(0);
+    opacity: 1;
+    transition: .9s ease all;
+}
+.mobile-menu-list{
+    padding-top: 20%;
+}
+.mobile-menu .mobile-menu-list li{
+    text-align: center;
+    list-style: none;
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;    
+}
+.mobile-menu-list li:not(:last-child){
+    padding-bottom: 24px;
 }
 .main-slider-nav span{
     font-weight: 500;
@@ -633,12 +682,195 @@ p.contacts-phone{
 .__second__block__contacts{
     padding-top: 85px;
 }
-.follow-us-buttons li{
+.follow-us-buttons{
+    display: flex;
+}
+.follow-us-icon{
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.follow-us-btn-txt{
+    display: block;
+    position: absolute;
+    top: 68px;
+    left: -20px;
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;   
+    color: #000000;    
+}
+.follow-us-btn{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 120px;
+}
+.__email-txt{
+    left: -40px;
+}
+.__support__text{
+    left: -45px;
+}
+.form-contact-wrapper{
+    background: #F7F7F7;
+}
+.form-contact-inner{
+    padding: 96px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-contact-text-title{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;    
+    text-transform: uppercase;
+    color: #000000;
+    max-width: 680px;
+}
+.formatted-form-contact-title{
+    color: #7354FF;
+    font-style: italic;
+}
+.form-contact-text-subtitle {
+    padding-top: 32px;
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;    
+    color: #000000;
+    max-width: 556px;
+}
+p.form-item-label{
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;   
+    align-items: center;    
+    color: #000000;
+    padding-bottom: 8px;   
+}
+.form-item{
+    padding-bottom: 24px;
+}
+.form-content{
+    max-width: 575px;
+}
+input.name, input.email, input.message{
+    padding: 10px 15px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+.form-send-msg{
+    width: 100%;
+    cursor: pointer;
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;    
+    margin-top: 48px;
+    height: 60px;
+    padding: 18px;    
+    background: #7354FF;
+    border-radius: 8px;
+    color: #fff;    
+    border: none;
+}
+.footer-wrapper{
+    background: #000000;
+}
+.footer-inner{
+    padding: 70px 20px 43px 20px;
+    color: #fff;
+}
+.footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-menu-list li{
     list-style: none;
     display: inline;
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;    
 }
-.follow-us-buttons li:not(:last-child){
-    margin-right: 60px;
+.footer-menu-list li:not(:last-child){
+    padding-right: 48px;
+}
+.go-to-top{
+    position: relative;
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;    
+}
+.go-to-top::after{
+    position: absolute;
+    right: -15px;
+    vertical-align: center;
+    content: url('../img/footer/arrow-up.svg');
+}
+.footer-adress-block{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.footer-adress{
+}
+.footer-adress-content,.footer-numbers-content{
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+}
+.footer-email-content{
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;    
+}
+.footer-numbers-content{
+    text-align: center;
+}
+.footer-line{
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 32px;
+}
+.footer-copyright{
+    font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;    
+    text-align: center;
+    padding-top: 32px;
+}
+.footer-email-content{
+    padding-bottom: 16px;    
+}
+.footer-email-content-last{
+    padding-bottom: 0;
 }
 @font-face {
     font-family: 'IBM Plex Sans';
