@@ -348,13 +348,13 @@
 }
 @media (max-width: 400px){
     .main-img-block img{
-        max-width: 300px;
+        max-width: 330px;
         height: 100%;
     }
     .main-slider-block{
-        max-width: 300px;
+        max-width: 330px;
     }
     .portfolio-item-img img{
-        max-width: 300px;
+        max-width: 330px;
     }
 }
