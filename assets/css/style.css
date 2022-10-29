@@ -156,12 +156,12 @@ body.__locked{
 }
 .menu-burger-lines span{
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 100%;
     background: #fff;
 }
 .menu-burger-lines span:nth-child(1){
-    top: 0;
+    top: 10px;
 }
 .menu-burger-lines span:nth-child(2){
     top: 8px;
@@ -463,6 +463,8 @@ span.our-numbers-formatted{
 }
 .portfolio-item-img img{
     display: block;
+    max-width: 670px;
+    height: auto;
     border-radius: 8px;
 }
 .porfolio-tag{
@@ -832,8 +834,6 @@ input.name, input.email, input.message{
     padding-bottom: 32px;
     display: grid;
     grid-template-columns: auto auto auto;
-}
-.footer-adress{
 }
 .footer-adress-content,.footer-numbers-content{
     font-family: 'PT Root UI', sans-serif;

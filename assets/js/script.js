@@ -48,3 +48,10 @@ burgerMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('__open');
     body.classList.toggle('__locked');
 })
+
+$('a[href*="#"]').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 900);
+    return false;
+  });
