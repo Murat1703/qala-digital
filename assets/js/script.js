@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     $('.about-us-slider').slick({
         nextArrow: $('#about-us-nav-arrow-next'),
-        prevArrow: $('#about-us-nav-arrow-prev'),                            
+        prevArrow: $('#about-us-nav-arrow-prev'), 
     });
 
     var $pagingInfo2 = $('.about-us-nav-paging-info');
