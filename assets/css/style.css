@@ -161,7 +161,7 @@ body.__locked{
     background: #fff;
 }
 .menu-burger-lines span:nth-child(1){
-    top: 10px;
+    top: 0;
 }
 .menu-burger-lines span:nth-child(2){
     top: 8px;
@@ -183,7 +183,7 @@ body.__locked{
     transition: .3s ease all;
 }
 .mobile-menu{
-    position: fixed;
+    position: absolute;
     top: 52px;
     width: 100%;
     height: 100%;
@@ -199,7 +199,7 @@ body.__locked{
     transition: .9s ease all;
 }
 .mobile-menu-list{
-    padding-top: 20%;
+    padding: 20%;
 }
 .mobile-menu .mobile-menu-list li{
     text-align: center;
@@ -531,6 +531,18 @@ span.our-numbers-formatted{
 .about-us-inner{
     padding: 96px 20px;
 }
+.about-us-slider{
+    display: block;
+    margin: 0 auto;
+}
+.about-us-image{
+    display: flex;
+    justify-content: center;
+}
+.about-us-text{
+    display: block;
+    margin: 0 auto;
+}
 .about-us-title{
     font-family: 'IBM Plex Sans',sans-serif;
     font-style: normal;
@@ -561,14 +573,22 @@ span.our-numbers-formatted{
 .about-us-nav-right-arrow{
     cursor: pointer;
 }
+/*Отображение текущего номера слайда*/
+.about-us-nav-currentCount{
+    padding-left: 20px;
+    color: rgba(115, 84, 255, 1);
+}
+/*Отображение общего количества слайдов*/
+.about-us-nav-totalCount{
+    padding-right: 20px;
+    color: rgba(219, 220, 219, 1);
+}
 .about-us-slide-item{
-    padding: 60px 0;
-    display: grid;
-    grid-template-columns: min-content auto;
+    display: block;
+/*    grid-template-columns: min-content auto;*/
     justify-content: center;
 }
 .about-us-text{
-    padding-left: 20px;
     max-width: 575px;
 }
 .about-us-text-title{

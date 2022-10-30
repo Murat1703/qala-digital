@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <header class="header-wrapper">
+    <header class="header-wrapper" id="header">
         <div class="header-inner container">
             <img src="assets/img/header/qala-logo.svg" class="logo-img" alt="qala logo">
             <div class="menu-list">
@@ -41,13 +41,13 @@
 
     <div class="mobile-menu">
         <div class="mobile-menu-list">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#about">Цифры</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#reviwes">Отзывы</a></li>
-            <li><a href="#price">Стоимость</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#header" class="mobile-menu-link">Главная</a></li>
+            <li><a href="#services" class="mobile-menu-link">Услуги</a></li>
+            <li><a href="#about" class="mobile-menu-link">Цифры</a></li>
+            <li><a href="#portfolio" class="mobile-menu-link">Портфолио</a></li>
+            <li><a href="#reviews" class="mobile-menu-link">Отзывы</a></li>
+            <li><a href="#price" class="mobile-menu-link">Стоимость</a></li>
+            <li><a href="#contacts" class="mobile-menu-link">Контакты</a></li>
         </div>
     </div>
 
@@ -219,17 +219,16 @@
             <div class="portfolio-inner-title">Портфолио</div>
             <div class="portfolio-container">
                 <div class="portfolio-item">
-                    <div class="portfolio-item-img"><img src="assets/img/porfolio/kpi.kz.jpg" alt="portfolio"></div>
+                    <div class="portfolio-item-img"><a href="https://kpi.kz/ru/"><img src="assets/img/porfolio/kpi.kz.jpg" alt="portfolio"></a></div>
                     <div class="portfolio-item-tags">
                         <span class="porfolio-tag">тех поддержка</span>
                         <span class="porfolio-tag">seo оптимизация</span>
                         <span class="porfolio-tag">редизайн</span>
                     </div>
                     <div class="portfolio-item-title">Первый интегрированный газохимический комплекс в Республике Казахстан</div>
-
                 </div>
                 <div class="portfolio-item __move-down">
-                    <div class="portfolio-item-img"><img src="assets/img/porfolio/amangeldygas.kz.jpg" alt="portfolio"></div>
+                    <div class="portfolio-item-img"><a href="http://amangeldygas.kz"><img src="assets/img/porfolio/amangeldygas.kz.jpg" alt="portfolio"></a></div>
                     <div class="portfolio-item-tags">
                         <span class="porfolio-tag">тех поддержка</span>
                         <span class="porfolio-tag">информационная поддержка</span>
@@ -238,7 +237,7 @@
 
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-item-img"><img src="assets/img/porfolio/kaznui.kz.jpg" alt="portfolio"></div>
+                    <div class="portfolio-item-img"><a href="https://kaznui.edu.kz"><img src="assets/img/porfolio/kaznui.kz.jpg" alt="portfolio"></a></div>
                     <div class="portfolio-item-tags">
                         <span class="porfolio-tag">тех поддержка</span>
                     </div>
@@ -246,7 +245,7 @@
 
                 </div>
                 <div class="portfolio-item __move-down">
-                    <div class="portfolio-item-img"><img src="assets/img/porfolio/abaiuniver.jpg" alt="portfolio"></div>
+                    <div class="portfolio-item-img"><a href="https://abaiuniversity.edu.kz/ru/4/page"><img src="assets/img/porfolio/abaiuniver.jpg" alt="portfolio"></a></div>
                     <div class="portfolio-item-tags">
                         <span class="porfolio-tag">присвоение DOI</span>
                         <span class="porfolio-tag">разработка сайта на платформе  OJS</span>
@@ -254,7 +253,7 @@
                     <div class="portfolio-item-title">Казахский национальный педагогический университет имени Абая</div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-item-img"><img src="assets/img/porfolio/aksukmg.jpg" alt="portfolio"></div>
+                    <div class="portfolio-item-img"><a href="https://aksukmg.kz"><img src="assets/img/porfolio/aksukmg.jpg" alt="portfolio"></a></div>
                     <div class="portfolio-item-tags">
                         <span class="porfolio-tag">разработка веб сайта</span>
                         <span class="porfolio-tag">техподдержка</span>
@@ -264,7 +263,7 @@
 
                 </div>
                 <div class="portfolio-item __move-down">
-                    <div class="portfolio-item-img"><img src="assets/img/porfolio/almatyustaz.jpg" alt="portfolio"></div>
+                    <div class="portfolio-item-img"><a href="https://almatyustazy.kz"><img src="assets/img/porfolio/almatyustaz.jpg" alt="portfolio"></a></div>
                     <div class="portfolio-item-tags">
                         <span class="porfolio-tag">тех поддержка</span>
                         <span class="porfolio-tag">редизайн</span>
@@ -317,12 +316,12 @@
                 </div>    
                 <div class="about-us-nav">
                     <div class="about-us-arrows">
-                        <div class="about-us-nav-left-arrow" id="my-arrow-prev"><img src="assets/img/about-us/about-us-arrow-left.svg" alt="left-arrow"></div>
+                        <div class="about-us-nav-left-arrow" id="about-us-nav-arrow-prev"><img src="assets/img/about-us/about-us-arrow-left.svg" alt="left-arrow"></div>
                         <span class="about-us-nav-paging-info"></span>
                         <span class="about-us-nav-currentCount"></span>
                         <span >/</span>
                         <span class="about-us-nav-totalCount"></span>                    
-                        <div class="about-us-nav-right-arrow" id="my-arrow-next"><img src="assets/img/about-us/about-us-arrow-right.svg" alt="right-arrow"></div>    
+                        <div class="about-us-nav-right-arrow" id="about-us-nav-arrow-next"><img src="assets/img/about-us/about-us-arrow-right.svg" alt="right-arrow"></div>    
                     </div>
                 </div>
             </div>
@@ -425,28 +424,28 @@
                 </div>
                 <div class="contacts-inner-content">
                     <div class="follow-us-buttons">
-                        <div class="follow-us-btn">
+                        <a href="https://www.instagram.com/digitalqala/"><div class="follow-us-btn">
                             <div class="follow-us-icon">
                                 <img src="assets/img/followus/insta_icon.svg" alt="insta_icon">
                             </div>
                             <div class="follow-us-btn-txt">@digitalqala 
                             </div>
-                        </div>
-                        <div class="follow-us-btn">
+                        </div></a>
+                        <a href="mailto:hello@digitalqala.kz"><div class="follow-us-btn">
                             <div class="follow-us-icon">
                                 <img src="assets/img/followus/email_icon.svg" alt="insta_icon">
                             </div>
                             <div class="follow-us-btn-txt __email-txt">hello@digitalqala.kz
 
                             </div>
-                        </div>
-                        <div class="follow-us-btn">
+                        </div></a>
+                        <a href="mailto:support@digitalqala.kz"><div class="follow-us-btn">
                             <div class="follow-us-icon">
                                 <img src="assets/img/followus/support__icon.svg" alt="insta_icon">
                             </div>
                             <div class="follow-us-btn-txt __support__text">support@digitalqala.kz
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
             </div>
@@ -499,7 +498,7 @@
                     <li><a href="#price">Стоимость</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </div> 
-                <a href="#" class="go-to-top">Вернуться наверх</a>
+                <a href="#header"  class="go-to-top">Вернуться наверх</a>
             </div>
             <div class="footer-adress-block">
                 <div class="footer-adress">
@@ -508,13 +507,13 @@
                     <p class="footer-adress-content">Офис №605</p>
                 </div>
                 <div class="footer-numbers">
-                    <p class="footer-numbers-content">Тел. номер компании 7 (727) 3231333 </p>
-                    <p class="footer-numbers-content">Отдел продаж 7 (727) 3231333</p>
-                    <p class="footer-numbers-content">Тех поддержка 7 (727) 3231300 </p> 
+                    <p class="footer-numbers-content"><a href="tel:+77273231333">Тел. номер компании 7 (727) 3231333</a></p>
+                    <p class="footer-numbers-content"><a href="tel:+77273231333">Отдел продаж 7 (727) 3231333</a></p>
+                    <p class="footer-numbers-content"><a href="tel:+77273231300">Тех поддержка 7 (727) 3231300</a> </p> 
                 </div>
                 <div class="footer-email">
-                    <p class="footer-email-content">hello@digitalqala.kz</p>
-                    <p class="footer-email-content footer-email-content-last">support@digitalqala.kz</p>
+                    <p class="footer-email-content"><a href="mailto:hello@digitalqala.kz">hello@digitalqala.kz</a></p>
+                    <p class="footer-email-content footer-email-content-last"><a href="mailto:support@digitalqala.kz">support@digitalqala.kz</a></p>
                 </div>
             </div>
             <div class="footer-line"></div>

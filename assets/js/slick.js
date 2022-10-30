@@ -44,8 +44,10 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                nextArrow: document.querySelector('#my-arrow-next'),
-                prevArrow: document.querySelector('#my-arrow-prev'),                
+/*                nextArrow: document.querySelector('#my-arrow-next'),
+                prevArrow: document.querySelector('#my-arrow-prev'),  */ 
+                nextArrow: $('#my-arrow-next'),
+                prevArrow: $('#my-arrow-prev'),                            
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
